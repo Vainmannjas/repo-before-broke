@@ -1,0 +1,70 @@
+{
+  "cars": [
+      {
+          "id": 1,
+          "name": "DeLorean Alpha5",
+          "price": 300000,
+          "img": "https://www.exoticcarlist.com/blog/wp-content/uploads/2023/08/DeLorean-Alpha5.jpeg"
+      },
+      {
+          "id": 2,
+          "name": "Audi RS E-tron GT",
+          "price": 340000,
+          "img": "https://www.exoticcarlist.com/blog/wp-content/uploads/2023/08/Audi-RS-E-tron-GT.jpeg"
+      },
+      {
+          "id": 3,
+          "name": "BMW i4",
+          "price": 100000,
+          "img": "https://www.exoticcarlist.com/blog/wp-content/uploads/2023/08/BMW-i4.jpeg"
+      },
+      {
+          "id": 4,
+          "name": "Porsche Taycan",
+          "price": 250000,
+          "img": "https://www.exoticcarlist.com/blog/wp-content/uploads/2023/08/Porsche-Taycan.jpeg"
+      },
+      {
+          "id": 5,
+          "name": "Lotus Eletre",
+          "price": 120000,
+          "img": "https://di-uploads-pod1.dealerinspire.com/manhattanmotorcarsinc/uploads/2022/03/01_Lotus_Eletre_Yellow_Studio_F34.jpg"
+      },
+      {
+          "id": 6,
+          "name": "Chevrolet Corvette",
+          "price": 120000,
+          "img": "https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/resize_dsc_0108.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+      },
+      {
+          "id": 7,
+          "name": "McLaren P1",
+          "price": 680000,
+          "img": "https://hips.hearstapps.com/hmg-prod/images/large-2696-mclaren-p1-1586789722.jpg"
+      },
+      {
+          "id": 8,
+          "name": "McLaren 750S",
+          "price": 585000,
+          "img": "https://www.topgear.com/sites/default/files/2023/11/McLaren_750S_TheDrive-0847.jpg"
+      },
+      {
+          "id": 9,
+          "name": "Ferrari 812",
+          "price": 340000,
+          "img": "https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/10/Ferrari-812-Superfast-Review-gear-patrol-slide-1.jpg"
+      },
+      {
+          "id": 10,
+          "name": "Ferrari SF90 XX",
+          "price": 530000,
+          "img": "https://cdn.motor1.com/images/mgl/koBZ74/2269:608:3729:3729/ferrari-sf90-xx-stradale-bianco-artico.webp"
+      },
+      {
+          "id": 11,
+          "name": "Bentley Batur",
+          "price": 2100000,
+          "img": "https://hips.hearstapps.com/hmg-prod/images/2024-bentley-batur-102-648c6186a172a.jpg?crop=0.842xw:0.709xh;0.134xw,0.191xh&resize=1200:*"
+      }
+  ]
+}
