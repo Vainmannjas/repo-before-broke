@@ -1,0 +1,14 @@
+.btn {
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 20px 0;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: #4e4e4e;
+    color: #fff;
+}

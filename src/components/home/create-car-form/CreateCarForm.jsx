@@ -1,46 +1,41 @@
-import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 import styles from  './CreateCarForm.module.css'
 
-const clearData = {
-  name: "",
-  price: "",
-  img: ""
+
+const CreateCarForm = () => { 
+  const {register, reset, handleSubmit, formState:{errors}} = useForm({
+    mode: 'onChange'
+  })
+
+  const createCar = data => {
+
+    // setCars(prev => [...prev, {
+    //   id: prev.length + 1, ...data
+    // }])
+    reset()
 }
-
-const CreateCarForm = ({setCars}) => { 
-  const [data, setData] = useState(clearData)
-
-  const createCar = (e) => {
-    e.preventDefault()
-
-    setCars(prev => [...prev, {
-      id: prev.length + 1, ...data
-    }])
-    setData(clearData)
-}
-
-
-
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit(createCar)}>
       <input 
         type="text" 
+        {...register('name', {required: 'Name is required!'})}
         placeholder="Name of car" 
-        onChange={e => setData(prev => ({...prev, name: e.target.value}))} 
-        value={data.name}
-      />
+        />
+      {errors?.name?.message && <p style={{color:'red'}}>Name is required</p>}
       <input 
         type="text" 
+        {...register('price', {required: 'Price is required!'})}
         placeholder="Price" 
-        onChange={e => setData(prev => ({...prev, price: e.target.value}))} 
-        value={data.price}/>
+      />
+      {errors?.price?.message && <p style={{color:'red'}}>Price is required</p>}
       <input 
         type="text" 
+        {...register('img', {required: 'Img is required'})}
         placeholder="Img" 
-        onChange={e => setData(prev => ({...prev, img: e.target.value}))} 
-        value={data.img}/>
+      />
+      {errors?.img?.message && <p style={{color:'red'}}>Img is required</p>}
 
-      <button onClick={e => createCar(e)}>Create</button>
+      <button>Create</button>
     </form>
   )
 }
