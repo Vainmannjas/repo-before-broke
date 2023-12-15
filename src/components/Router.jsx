@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './home/Home'
 import CarDetail from './car-detail/CarDetail'
 
+
 const Router = () => {
   return (
     <BrowserRouter>
